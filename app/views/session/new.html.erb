@@ -8,5 +8,9 @@
   <%= f.password_field :password, placeholder: "Enter your password" %>
   <%= f.submit "Login" %>
 <% end %>
+<%= link_to "Login with Facebook", "/auth/facebook", class: "btn btn-primary" %>
+
+<div class="well">
 
 Current User: <%=@current_user.inspect%>
+</div>
